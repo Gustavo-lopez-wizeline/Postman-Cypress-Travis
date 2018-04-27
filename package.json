@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Gustavo-lopez-wizeline/Postman-Travis/issues"
   },
-  "homepage": "https://github.com/Gustavo-lopez-wizeline/Postman-Travis#readme"
+  "homepage": "https://github.com/Gustavo-lopez-wizeline/Postman-Travis#readme",
+  "dependencies": {
+    "newman": "^3.9.3"
+  }
 }
