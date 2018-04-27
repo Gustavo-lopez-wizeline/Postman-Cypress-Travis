@@ -1,0 +1,23 @@
+{
+  "name": "Postman-Travis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gustavo-lopez-wizeline/Postman-Travis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gustavo-lopez-wizeline/Postman-Travis/issues"
+  },
+  "homepage": "https://github.com/Gustavo-lopez-wizeline/Postman-Travis#readme"
+}
