@@ -1,14 +1,23 @@
 language: node_js
+
 node_js:
   - "6.10.0"
 
+cache:
+  directories:
+    - ~/ .npm
+    - node_modules
+    
 install:
+  - npm install
   - npm install newman
 
 before_script:
   - node --version
   - npm --version
   - node_modules/.bin/newman --version
+  - npm start -- --silent &
 
 script:
   - node_modules/.bin/newman run tests/bitcoinz.postman_collection.json
+  - npm run cypress:run

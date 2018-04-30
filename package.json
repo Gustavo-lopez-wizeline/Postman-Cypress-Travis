@@ -1,13 +1,16 @@
 {
-  "name": "Postman-Travis",
-  "version": "1.0.0",
-  "description": "",
+  "name": "Postman-Cypress-Travis",
+  "version": "1.1.0",
+  "description": "Test Project to integrate: Travis, Postman/Newman and Cypress",
   "main": "index.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server -p 8888 -c-1",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "npm run start & cypress run"
   },
   "repository": {
     "type": "git",
@@ -22,5 +25,8 @@
   "homepage": "https://github.com/Gustavo-lopez-wizeline/Postman-Travis#readme",
   "dependencies": {
     "newman": "^3.9.3"
-  }
+  },
+  "devDependencies": {
+    "cypress": "^2.1.0"
+  },
 }
