@@ -1,5 +1,7 @@
-# Project Title
+# Travis Integration test
 
-Test Project to integrate Postman/Newman and Travis
+Test Project to integrate:
+* Travis
+* Postman/Newman 
+* Cypress
 
-## Example
