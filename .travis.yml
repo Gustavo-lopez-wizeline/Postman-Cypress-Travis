@@ -7,7 +7,7 @@ cache:
   directories:
     - ~/ .npm
     - node_modules
-    
+
 install:
   - npm install
   - npm install newman
@@ -20,4 +20,4 @@ before_script:
 
 script:
   - node_modules/.bin/newman run tests/bitcoinz.postman_collection.json
-  - npm run cypress:run
+  - ./node_modules/.bin/cypress run cypress/integration/galen_example.js

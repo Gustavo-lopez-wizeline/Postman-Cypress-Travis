@@ -7,7 +7,6 @@
     "test": "tests"
   },
   "scripts": {
-    "start": "http-server -p 8888 -c-1",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "test": "npm run start & cypress run"
