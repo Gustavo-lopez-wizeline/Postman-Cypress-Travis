@@ -21,7 +21,7 @@ describe('Basic Login App', function(){
     cy.get('input[name="login.password"]').clear().type(correctData.pass)
     cy.get('.button-login').click()
     cy.get('.alert-danger').should('not.be.visible')
-    cy.get('h2').should('contain', 'Masdvasdvadvdafbvy Notes')
+    cy.get('h2').should('contain', 'My Notes')
   })
 
   it('Write a note', function(){
