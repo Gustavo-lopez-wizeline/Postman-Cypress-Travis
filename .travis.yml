@@ -4,8 +4,8 @@ node_js:
   - "6.10.0"
 
 install:
-  - npm install
-  - npm install newman
+  #- npm install
+  - yarn install newman
 
 before_script:
   - node --version
