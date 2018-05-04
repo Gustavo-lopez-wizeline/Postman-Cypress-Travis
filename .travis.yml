@@ -3,11 +3,6 @@ language: node_js
 node_js:
   - "6.10.0"
 
-cache:
-  directories:
-    - ~/ .npm
-    - node_modules
-
 install:
   - npm install
   - npm install newman
@@ -18,5 +13,5 @@ before_script:
   - node_modules/.bin/newman --version
 
 script:
-  - node_modules/.bin/newman run tests/bitcoinz.postman_collection.json
+  - node_modules/.bin/newman run tests/Unity.postman_collection.json
   - ./node_modules/.bin/cypress run tests/cypress.json

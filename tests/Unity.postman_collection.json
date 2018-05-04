@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "b0c84f3e-a2f9-4f0c-812b-f6182de13b1b",
+		"name": "Unity",
+		"description": "Postman tests for UL 2.0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Install Postman BDD",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"// If the \"postman_bdd_path\" environment variable is set, then we'll use it.",
+							"// Otherwise, we'll default to the published version",
+							"if (!environment.postman_bdd_path) {",
+							"    postman.setGlobalVariable('postman_bdd_path', 'http://bigstickcarpet.com/postman-bdd/dist/postman-bdd.min.js');",
+							"}",
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"// \"install\" Postman BDD",
+							"postman.setGlobalVariable('postmanBDD', responseBody);",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{postman_bdd_path}}",
+					"host": [
+						"{{postman_bdd_path}}"
+					]
+				},
+				"description": "This request downloads [Postman BDD](https://github.com/BigstickCarpet/postman-bdd) and then \"installs\" it by setting a global variable\n"
+			},
+			"response": []
+		}
+	]
+}
