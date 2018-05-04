@@ -7,9 +7,6 @@
     "test": "tests"
   },
   "scripts": {
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
-    "test": "npm run start & cypress run"
   },
   "repository": {
     "type": "git",
