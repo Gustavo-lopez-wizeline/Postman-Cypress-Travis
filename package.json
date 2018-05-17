@@ -3,9 +3,6 @@
   "version": "1.1.0",
   "description": "Test Project to integrate: Travis, Postman/Newman and Cypress",
   "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
   "scripts": {
   },
   "repository": {
