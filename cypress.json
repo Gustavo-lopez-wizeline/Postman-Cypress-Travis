@@ -1,3 +1,4 @@
 {
-  "baseUrl": "http://testapp.galenframework.com"
+  "baseUrl": "http://testapp.galenframework.com",
+  "videoRecording": false
 }
